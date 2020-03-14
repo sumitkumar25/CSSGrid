@@ -1,0 +1,11 @@
+.greatest-races {
+  grid-column: center-start/center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  //   grid-template-rows: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem;
+}
+.race {
+  background-color: $color-grey-light-1;
+  min-height: 30rem;
+}

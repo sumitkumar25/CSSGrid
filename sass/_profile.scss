@@ -1,0 +1,45 @@
+.profile {
+  &__picture {
+    grid-column: full-bleed-start / col-end 4;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+  }
+  &__img--1 {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    background-image: linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)),
+      url("./../assets/img/profile/d1/michael-bg-bottom.jpeg");
+    background-size: cover;
+  }
+  &__img--2 {
+    grid-row: 2/6;
+    grid-column: 2/6;
+    background: linear-gradient(rgba($color-primary, 0.4), rgba($color-primary, 0.4)),
+      url("./../assets/img/profile/d1/michael-bg-mid.jpg") no-repeat;
+    background-size: cover;
+  }
+  &__img--3 {
+    grid-row: 5/7;
+    grid-column: 4/7;
+    background: linear-gradient(rgba($color-primary, 0.3), rgba($color-primary, 0.3)),
+      url("./../assets/img/profile/d1/michael-bg-top.jpg") no-repeat;
+    background-size: cover;
+    z-index: 1;
+    width: 120%;
+  }
+  &__content {
+    grid-column: col-start 5 / full-bleed-end;
+    padding: 6rem 8vw;
+    align-items: flex-start;
+    display: grid;
+    align-content: center;
+    .btn {
+      justify-self: end;
+    }
+  }
+  &__text {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+}

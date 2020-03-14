@@ -1,0 +1,27 @@
+.statistics {
+  grid-column: center-start/center-end;
+  margin: 10rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  // grid-template-columns: repeat(3, 1fr);
+}
+.statistic {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-gap: 1rem 2rem;
+  &__img {
+    height: 4.5rem;
+    width: 4.5rem;
+    fill: $color-primary;
+    grid-row: 1 / span 2;
+  }
+  &__text {
+    font-size: 1.7rem;
+    list-style: none;
+  }
+  &__text--datum {
+    display: flex;
+    justify-content: space-between;
+  }
+}

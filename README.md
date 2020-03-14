@@ -140,5 +140,7 @@ ___
 
 ## forward content.
 
-1. Grid placement algorithm
+1. Grid placement algorithm.
+2. Subgrid
+3. extend vs mixin
 
